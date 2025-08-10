@@ -1,0 +1,53 @@
+a {
+  color: darkblue;
+  text-decoration-skip-ink: auto;
+}
+
+/* 2. clip-path: Defines a clipping region to display only part of an element */
+.box {
+  clip-path: circle(50%);
+}
+
+/* 3. filter: Applies graphical effects like blur, brightness, etc., to elements */
+img {
+  filter: grayscale(50%);
+}
+
+/* Set background color for the whole page */
+body {
+  background-color: #f0f8ff; /* Alice Blue */
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  color: #333333; /* Default text color */
+}
+
+/* Set text color for headings */
+h1, h2 {
+  color: #2a52be; /* Sapphire Blue */
+}
+
+/* Border on top and bottom of paragraphs */
+p {
+  border-top: 3px solid #2a52be;
+  border-bottom: 3px solid #2a52be;
+  padding: 5px 0;
+  margin: 15px 0;
+}
+
+/* Multiple selectors example: style links and buttons the same */
+a, button {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+a:hover, button:hover {
+  color: #ff4500; /* OrangeRed on hover */
+}
+
+/* Specific field by ID */
+#special-note {
+  background-color: #ffffcc; /* Light yellow */
+  border: 2px dashed #ffcc00;
+  padding: 10px;
+  font-style: italic;
+}

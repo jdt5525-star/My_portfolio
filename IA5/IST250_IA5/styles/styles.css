@@ -1,0 +1,49 @@
+/* styles.css */
+
+/* --- Mobile First (default styles) --- */
+body {
+  font-family: sans-serif;
+}
+
+/* Hide tablet & desktop features by default */
+.menu-item, 
+.google-map-embed, 
+footer {
+  display: none;
+}
+
+/* --- Tablet View (min-width: 600px) --- */
+@media (min-width: 600px) {
+  .menu-item {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .menu-item img {
+    width: 150px;
+  }
+
+  .google-map-embed {
+    display: block;
+    width: 100%;
+    height: 300px;
+  }
+
+  footer {
+    display: block;
+  }
+}
+
+/* --- Desktop View (min-width: 900px) --- */
+@media (min-width: 900px) {
+  .menu-item img {
+    width: 250px;
+  }
+
+  .google-map-embed {
+    height: 450px;
+  }
+
+
+}

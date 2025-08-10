@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Jonathan Thomas
+        7/12/2025
+    -->
+    <meta charset="UTF-8" />
+    <title>IA4</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <main class="greeting">
+            <section class="title">
+                <h1>Spinnster Records Store</h1>
+            </section>
+            <section class="menu">
+        <a href="index.html" style="margin-right: 20px;">Sales</a>
+        <a href="store.html">About Us</a>
+                 
+            </section>
+        </main>
+    </header>
+
+    <h2 class="albums">Albums Available Today!</h2>
+    <div class="carousel-container">
+        <button class="nav left" onclick="Left()">&#60;</button>
+
+        <div class="carousel-window">
+            <div id="carousel-content" class="carousel-track"></div>
+        </div>
+
+        <button class="nav right" onclick="Right()">&#62;</button>
+    </div>
+
+    <section class="table-position">
+        <table>
+            <caption class="albums">Albums for Sale</caption>
+            <tr class="table-headers">
+                <th>Artist Name</th>
+                <th>Album</th>
+                <th>Year</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Lauryn Hill</td>
+                <td>The Miseducation of Lauryn Hill</td>
+                <td>1998</td>
+                <td>$$$</td>
+            </tr>
+            <tr>
+                <td>J. Cole</td>
+                <td>2014 Forest Hill Drive</td>
+                <td>2014</td>
+                <td>$$$</td>
+            </tr>
+            <tr>
+                <td>Kendrick Lamar</td>
+                <td>good kid, m.A.A.d city</td>
+                <td>2012</td>
+                <td>$$$</td>
+            </tr>
+            <tr>
+                <td>Tems</td>
+                <td>Born in the Wild</td>
+                <td>2024</td>
+                <td>$$$</td>
+            </tr>
+            <tr>
+                <td>Daniel Ceasar</td>
+                <td>Never Enough</td>
+                <td>2023</td>
+                <td>$$$</td>
+            </tr>
+        </table>
+    </section>
+    <script src="scripts/scripts.js"></script>
+</body>
+
+<footer>&copy;2025 Spinnster Records Store.  All Rights Reserved</footer>
+</html>

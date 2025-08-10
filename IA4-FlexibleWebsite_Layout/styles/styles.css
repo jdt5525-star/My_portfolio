@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    border-bottom: 2px solid rgba(209, 166, 37, 0.55);
+    background: linear-gradient(to right, white, rgba(219, 184, 82, 0.5));
+    padding: 8px;
+    display: flex;
+    justify-content: center; 
+}
+
+footer{
+    border-bottom: 2px solid rgba(209, 166, 37, 0.55);
+    background-color: rgba(219, 184, 82, 0.5);
+    padding: 8px;
+    display: flex;
+    justify-content: center; 
+}
+
+h2 {
+    display: flex;
+    justify-content: center; 
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    color: #2b2000;
+    text-shadow:
+        2px 2px 0 #d4b44f,
+        4px 4px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    margin: 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d1a625;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;  
+}
+
+.carousel-window {
+    width: 750px;
+    height: 375px;
+    overflow: hidden;
+    background-color: rgba(192, 192, 192, 0.603);
+    padding-top: 45px;
+    border: .5px dashed black;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px;
+    font-size: 0.9rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 0 0 10px 10px;
+}
+
+.carousel-item:hover .caption {
+    opacity: 1;
+}
+
+.carousel-track {
+    display: flex;
+    flex-direction: row;   
+    flex-wrap: nowrap;     
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+    
+.carousel-item {
+    width: 220px;
+    transition: transform 0.3s ease, width 0.3s ease;
+    margin: 0 5px;
+    flex-shrink: 0;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+
+.carousel-item.focused {
+    width: 300px;
+    transform: scale(1.1);
+    z-index: 1;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+    background-color: rgba(115, 110, 110, 0.553);
+    color: white;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    height: 420px;
+    width: 50px
+}
+
+.albums {
+    font-size: 30px; 
+    flex-wrap: wrap;
+}
+
+.table-position {
+    display: flex;
+    justify-content: center;        
+}
+
+table { 
+    border: 1px solid gray;
+    border-radius: 5px;
+    background: linear-gradient(rgb(255, 255, 255), rgb(200, 138, 61));
+    border-collapse: separate;
+    flex-grow: .5;
+    margin: 16px;
+}
+
+td {
+    border: 1px solid gray;
+    background-color: rgba(245, 245, 245, 0.6);
+    padding: 8px 12px;
+    font-size: 18px;
+}
+
+th {
+    border-right: 1px dashed gray;
+    padding: 8px 12px;
+}
